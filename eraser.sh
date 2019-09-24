@@ -1,13 +1,13 @@
 #!/bin/bash
-fichers=$(ls)
+files=$(ls)
 
-for ficher in ${fichers[@]}
+for file in ${files[@]}
 do
-	if [ -d $ficher ] || [ -s $ficher ]
+	if [ -d $file ] || [ -s $file ]
 	then
-		echo "I can't erase $ficher."
+		echo "I can't erase $file."
 	else
-		echo "Erasing $ficher..."
-		rm -f $ficher
+		echo "Erasing $file..."
+		rm -f $file
 	fi
 done
